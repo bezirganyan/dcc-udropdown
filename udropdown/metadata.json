@@ -1,0 +1,176 @@
+{
+  "src/lib/components/Udropdown.react.js": {
+    "description": "",
+    "displayName": "Udropdown",
+    "methods": [],
+    "props": {
+      "clearable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to close or keep open the dropdown."
+      },
+      "close_menu_on_select": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to close or keep open the dropdown."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "multi": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Option to addd several options"
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "value": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "The value displayed in the input."
+      },
+      "default_value": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "exact",
+            "value": {
+              "label": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ],
+                "description": "The dropdown's label",
+                "required": true
+              },
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ],
+                "description": "The value of the dropdown. This value\ncorresponds to the items specified in the\n`value` property.",
+                "required": true
+              },
+              "disabled": {
+                "name": "bool",
+                "description": "If true, this option is disabled and cannot be selected.",
+                "required": false
+              },
+              "title": {
+                "name": "string",
+                "description": "The HTML 'title' attribute for the option. Allows for\ninformation on hover. For more information on this attribute,\nsee https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "options": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "exact",
+            "value": {
+              "label": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ],
+                "description": "The dropdown's label",
+                "required": true
+              },
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ],
+                "description": "The value of the dropdown. This value\ncorresponds to the items specified in the\n`value` property.",
+                "required": true
+              },
+              "disabled": {
+                "name": "bool",
+                "description": "If true, this option is disabled and cannot be selected.",
+                "required": false
+              },
+              "title": {
+                "name": "string",
+                "description": "The HTML 'title' attribute for the option. Allows for\ninformation on hover. For more information on this attribute,\nsee https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  }
+}

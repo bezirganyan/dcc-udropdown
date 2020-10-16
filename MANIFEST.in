@@ -1,0 +1,7 @@
+include udropdown/udropdown.min.js
+include udropdown/udropdown.min.js.map
+include udropdown/metadata.json
+include udropdown/package-info.json
+include README.md
+include LICENSE
+include package.json
